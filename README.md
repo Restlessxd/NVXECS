@@ -120,10 +120,7 @@ Seven backward-compatible optimization phases, each measurable:
 3. **`attachEmpty` fast-path** — attach without init-object dispatch.
 4. **Precomputed `ComponentInfo`** — `{ generationId, bitflag }` cached so `has` paths skip shifts.
 5. **Cached component views** — `world.view(def)` returns the same object every call, mutated in place on growth.
-6. **Zero-alloc `_applyInit` + bit-walk `removeAll`** — kills `Object.entries` GC pressure and reduces cascade destroy from `O(N_components)` to `O(K_attached)`.
-7. **Event view cache + parallel field arrays** — eliminates iterator/object allocations in `EventBus.read`, `ComponentStore.remove`, and `EventBus.clearAll`.
-
-Key lesson: **hidden allocations in setup and iterator paths dominate benchmark results more than inner-loop math.** The `hasComponent` gap flipped from 1.4× behind bitECS to 3.0× ahead without touching the `has` code — entirely by reducing GC noise in surrounding code.
+6. **Zero-alloc** - GC pressure and reduces cascade destroy from `O(N_components)` to `O(K_attached)`.
 
 ## Install
 
@@ -174,9 +171,3 @@ docs/              ARCHITECTURE · PERFORMANCE · API
 ## Status
 
 🟢 **Feature complete for production game servers.** 189 tests passing, ESM + CJS bundles built, zero runtime dependencies, API stable.
-
-Powers [Dize.io](https://github.com/) — a deep survival `.io` game.
-
-## License
-
-[MIT](LICENSE)
