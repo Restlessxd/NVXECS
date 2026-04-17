@@ -1,0 +1,32 @@
+{
+    "name": "nvx-ecs",
+    "version": "0.1.0",
+    "description": "High-performance sparse-set ECS for Node.js game servers. Zero-alloc hot paths, dependency-based scheduler, hot reload.",
+    "private": true,
+    "license": "MIT",
+    "type": "module",
+    "main": "dist/nvx-ecs.cjs.js",
+    "types": "dist/types/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/types/index.d.ts",
+            "import": "./dist/nvx-ecs.esm.js",
+            "require": "./dist/nvx-ecs.cjs.js"
+        }
+    },
+    "scripts": {
+        "build": "node build.cjs",
+        "test": "vitest run --config vitest.config.ts",
+        "test:watch": "vitest --config vitest.config.ts",
+        "bench": "vitest bench --config vitest.config.ts",
+        "typecheck": "tsc -p tsconfig.build.json --noEmit",
+        "example:basic": "tsx examples/basic.ts",
+        "example:survival": "tsx examples/survival-demo.ts",
+        "example:perf": "tsx examples/performance-patterns.ts"
+    },
+    "dependencies": {
+        "bitecs": "^0.4.0",
+        "esbuild": "^0.28.0",
+        "vitest": "^4.1.4"
+    }
+}
