@@ -6,7 +6,7 @@ A sparse-set + opt-in-dense Entity Component System with a dependency-based sche
 
 Made with [@Claude](https://github.com/anthropics/claude-code) and Love ❤️
 
-[![Tests](https://img.shields.io/badge/tests-189%2F189_passing-brightgreen)]() [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6?logo=typescript&logoColor=white)]() [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE) [![Zero deps](https://img.shields.io/badge/runtime_deps-0-success)]() [![Node](https://img.shields.io/badge/node-%E2%89%A522-brightgreen?logo=node.js&logoColor=white)]()
+[![Tests](https://img.shields.io/badge/tests-189%2F189_passing-brightgreen)]() [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6?logo=typescript&logoColor=white)]() [![Zero deps](https://img.shields.io/badge/runtime_deps-0-success)]() [![Node](https://img.shields.io/badge/node-%E2%89%A522-brightgreen?logo=node.js&logoColor=white)]()
 
 ```
 ┌──────────────────────────── vs bitECS (100 ticks × 10k entities) ───────────────────────────┐
