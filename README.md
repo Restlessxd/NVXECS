@@ -4,6 +4,8 @@
 
 A sparse-set + opt-in-dense Entity Component System with a dependency-based scheduler, event bus, hot reload, and TypeScript-native type inference — benchmarked head-to-head against [bitECS](https://github.com/NateTheGreatt/bitECS) on **12 identical workloads** and winning all twelve, from **1.7× to 30× faster**.
 
+Made with [@Claude](https://github.com/anthropics/claude-code) and Love ❤️
+
 [![Tests](https://img.shields.io/badge/tests-189%2F189_passing-brightgreen)]() [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6?logo=typescript&logoColor=white)]() [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE) [![Zero deps](https://img.shields.io/badge/runtime_deps-0-success)]() [![Node](https://img.shields.io/badge/node-%E2%89%A522-brightgreen?logo=node.js&logoColor=white)]()
 
 ```
