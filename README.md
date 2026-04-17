@@ -1,4 +1,4 @@
-# nvx-ecs
+# NVX-ECS
 
 **The fastest general-purpose ECS for Node.js game servers.**
 
